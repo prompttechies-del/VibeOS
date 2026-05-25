@@ -1,6 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  --color-ink: #000000;
+  --color-ink-50: #0A0A0B;
+  --color-ink-100: #0F0F12;
+  --color-ink-200: #16161A;
+  --color-ink-300: #1F1F24;
+  --color-ink-400: #2A2A30;
+
+  --color-violet-glow: #8B5CF6;
+  --color-violet-soft: #C4B5FD;
+
+  --tracking-tightest: -0.04em;
+  --tracking-tighter: -0.03em;
+}
 
 *,
 *::before,
@@ -11,11 +27,10 @@
 }
 
 html,
-body,
-#root {
+body {
   background: #000;
   color: #fafafa;
-  font-family: 'Manrope', system-ui, sans-serif;
+  font-family: var(--font-manrope), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'cv11', 'ss01', 'ss03';

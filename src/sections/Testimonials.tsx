@@ -1,10 +1,12 @@
+"use client";
+
 import { motion } from 'framer-motion';
 import Eyebrow from '../components/Eyebrow';
 
 const QUOTES = [
   {
     quote:
-      "We killed three meetings the week we rolled out Notch. The action items just\u2026 happened. No one was writing them down anymore — they were already in Linear.",
+      "We killed three meetings the week we rolled out VibeOS. The action items just\u2026 happened. No one was writing them down anymore — they were already in Linear.",
     name: 'Sarah Karimi',
     role: 'Staff Eng',
     company: 'Helix',
@@ -33,7 +35,7 @@ const Testimonials = () => {
     <section className="relative py-24 sm:py-32 border-t border-white/[0.06]">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="flex flex-col items-start sm:items-center text-left sm:text-center max-w-2xl mx-auto mb-16 sm:mb-20">
-          <Eyebrow className="mb-5">FROM TEAMS USING NOTCH</Eyebrow>
+          <Eyebrow className="mb-5">FROM TEAMS USING VIBEOS</Eyebrow>
           <h2
             className="text-fade font-semibold tracking-tighter leading-[1.05]"
             style={{ fontSize: 'clamp(2rem, 4.5vw, 3.5rem)' }}

@@ -1,66 +1,36 @@
-# VibeOS
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A landing page for **VibeOS** — a fictional AI meeting-notes product for engineering teams. Built as a portfolio piece to demonstrate SaaS landing-page design and front-end craft.
+## Getting Started
 
-Linear-style dark aesthetic, sharp typography, monospace accents, custom product mockup in the hero.
-
-## Stack
-
-- React 18 + TypeScript
-- Vite
-- Tailwind CSS
-- Framer Motion (scroll-driven reveals)
-- Lucide React (icons)
-- Manrope + JetBrains Mono (Google Fonts)
-
-**No backend, no API keys, no env vars.** Pure static site.
-
-## Sections
-
-1. Fixed navbar (transparent → blurred on scroll)
-2. Hero with custom product mockup (transcript ↔ AI-extracted notes, two-pane window)
-3. Logo strip (marquee of fictional companies)
-4. Features (6-card grid, one featured)
-5. How it works (3 numbered steps with mono code annotations)
-6. Pricing (3 tiers, "Team" featured)
-7. Testimonials (3 fake quotes)
-8. Final CTA (big closing pitch)
-9. Footer (4 link columns + status pill + credits)
-
-## Run locally
+First, run the development server:
 
 ```bash
-npm install
-npm run dev      # http://localhost:5173
-npm run build    # production build → /dist
-npm run preview  # serve /dist locally
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Deploy to Vercel
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Push to GitHub, import the repo at [vercel.com/new](https://vercel.com/new), click Deploy. That's it — no env vars to configure.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Or via CLI:
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-```bash
-npm i -g vercel       # or use `npx vercel`
-vercel --prod
-```
+## Learn More
 
-## Customisation pointers
+To learn more about Next.js, take a look at the following resources:
 
-| Want to change | File |
-|---|---|
-| Product name, nav links | `src/sections/Nav.tsx` |
-| Hero headline + mockup content | `src/sections/Hero.tsx` |
-| Fictional company names | `src/sections/LogoStrip.tsx` |
-| Feature list | `src/sections/Features.tsx` (`FEATURES` array) |
-| Pricing tiers | `src/sections/Pricing.tsx` (`TIERS` array) |
-| Testimonials | `src/sections/Testimonials.tsx` (`QUOTES` array) |
-| Footer links / credits | `src/sections/Footer.tsx` |
-| Brand colors, fonts | `tailwind.config.js` + `src/index.css` |
-| Page metadata (title, OG tags) | `index.html` |
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Credits
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Designed & built by **SHAIK SAAHIL ZAMEER** as a portfolio piece. VibeOS is not a real product.
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
