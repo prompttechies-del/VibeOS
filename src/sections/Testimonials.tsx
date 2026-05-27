@@ -1,12 +1,10 @@
-"use client";
-
 import { motion } from 'framer-motion';
 import Eyebrow from '../components/Eyebrow';
 
 const QUOTES = [
   {
     quote:
-      "We killed three meetings the week we rolled out VibeOS. The action items just\u2026 happened. No one was writing them down anymore — they were already in Linear.",
+      "We killed three meetings the week we rolled out VibeOS. The action items just… happened. No one was writing them down anymore — they were already in Linear.",
     name: 'Sarah Karimi',
     role: 'Staff Eng',
     company: 'Helix',
@@ -51,7 +49,7 @@ const Testimonials = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
-              transition={{ duration: 0.6, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.15, ease: [0.22, 1, 0.36, 1] }}
               className="rounded-2xl border-hairline bg-white/[0.015] p-7 sm:p-8 flex flex-col gap-6"
             >
               <blockquote className="text-[15px] sm:text-base leading-relaxed text-white/85">

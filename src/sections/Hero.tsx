@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, CheckSquare, Square, GitBranch } from 'lucide-react';
 import Button from '../components/Button';

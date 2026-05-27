@@ -25,51 +25,31 @@ const Footer = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 sm:gap-10 mb-14 sm:mb-20">
           {/* Logo + tagline */}
           <div className="col-span-2 flex flex-col gap-3">
-            <div className="flex items-center gap-2 group">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="transition-all duration-500 group-hover:scale-110"
-              >
-                <circle
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="url(#vibe-footer-circle-grad)"
-                  strokeWidth="1.5"
-                  strokeDasharray="4 2"
-                  className="opacity-60 transition-transform duration-700 origin-center group-hover:rotate-180"
-                />
+            <div className="flex items-center gap-2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="vibeGradFooter" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#C4B5FD" />
+                    <stop offset="1" stopColor="#8B5CF6" />
+                  </linearGradient>
+                </defs>
                 <path
-                  d="M7 8L12 16L17 8"
-                  stroke="url(#vibe-footer-vibe-grad)"
+                  d="M4.5 5.5L10.5 18.5C11 19.5 13 19.5 13.5 18.5L19.5 5.5"
+                  stroke="url(#vibeGradFooter)"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
-                  d="M10 11H14"
-                  stroke="white"
+                  d="M8.5 8.5L12 16L15.5 8.5"
+                  stroke="#FFF"
                   strokeWidth="1.5"
                   strokeLinecap="round"
-                  opacity="0.8"
+                  strokeLinejoin="round"
+                  opacity="0.85"
                 />
-                <defs>
-                  <linearGradient id="vibe-footer-vibe-grad" x1="7" y1="8" x2="17" y2="16" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#c084fc" />
-                    <stop offset="1" stopColor="#8b5cf6" />
-                  </linearGradient>
-                  <linearGradient id="vibe-footer-circle-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#8b5cf6" stopOpacity="0.8" />
-                    <stop offset="0.5" stopColor="#a78bfa" stopOpacity="0.4" />
-                    <stop offset="1" stopColor="#8b5cf6" stopOpacity="0.1" />
-                  </linearGradient>
-                </defs>
               </svg>
-              <span className="font-semibold tracking-tight">VibeOS</span>
+              <span className="font-semibold tracking-tight">vibeOS</span>
             </div>
             <p className="text-[13.5px] text-white/45 leading-relaxed max-w-xs">
               AI meeting notes for engineering teams. From conversation to commit
@@ -115,9 +95,12 @@ const Footer = () => {
           </p>
           <p className="font-mono text-[11px] text-white/35">
             Designed & built by{' '}
-            <span className="text-white/70 font-semibold">
-              SHAIK SAAHIL ZAMEER
-            </span>
+            <a
+              href="#"
+              className="text-white/70 hover:text-white underline-offset-4 hover:underline"
+            >
+              shaik saahil zameer
+            </a>
           </p>
         </div>
       </div>

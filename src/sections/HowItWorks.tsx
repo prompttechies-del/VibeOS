@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from 'framer-motion';
 import Eyebrow from '../components/Eyebrow';
 
